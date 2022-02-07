@@ -7,12 +7,12 @@ Inspired by the [Blot.im](https://blot.im/) was using with Dropbox and what the 
 
 * A server running PHP
 * A Google account with Google Docs
- * A draft folder
- * A published folder
+    * A draft folder
+    * A published folder
 * A Zapier account
- * Two Zaps:
-  1. To monitor the drafts folder
-  2. To monitor the published folder
+    * Two Zaps:
+        1. To monitor the drafts folder
+        2. To monitor the published folder
 * A Sparkpost account
 
 ## Features
