@@ -1,0 +1,21 @@
+<!-- this template is for the contents of the notification email sent when a draft is created/article published -->
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<style>
+		body, p, th, td {
+			font-family: arial, sans-serif;
+			font-size: 12px;
+		}
+	</style>
+	<body style="font-family: arial, sans-serif; font-size: 12px;">
+	<p>Your {{ article_status }} of <strong>{{ article_title }}</strong> has been created, you can {% if article_status == 'draft' %}preview{% else %}see{% endif %} the article here:</p>
+	
+	<p>{{ link_url }}</p>
+	</body>
+</html> 

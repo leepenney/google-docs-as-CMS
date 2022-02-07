@@ -1,0 +1,12 @@
+{% extends 'base.twig.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+	<h1>{{ title }}</h1>
+	{{ content }}
+	
+	<footer id="article">
+		<a href="/articles">&larr; Back to articles list</a>
+	</footer>
+{% endblock %}

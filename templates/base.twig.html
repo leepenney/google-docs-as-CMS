@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %}</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			h1,h3{letter-spacing:2px}#content,td,th{text-align:left}#content img,article,aside,details,figcaption,figure,footer,header,nav,section{display:block}*{box-sizing:border-box}a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,iframe,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,ul,var{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline}blockquote,em,q{font-style:italic}ol,p,ul{margin-bottom:1.8rem}html{overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}ol,ul{list-style:disc inside}table{border-collapse:separate;border-spacing:0}td,th{font-weight:400}blockquote:after,blockquote:before,q:after,q:before{content:""}blockquote,q{quotes:"" "";margin:0 2em 1.8rem 2rem}a:focus{outline:dotted thin}a:active,a:hover{outline:0}a img{border:none}body,button,input,select,textarea{color:#424242;background:#fafafa;text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif}body{color:#212121;letter-spacing:.02em;line-height:1}p{line-height:1.4}a{color:#424242;text-decoration:underline}strong{font-weight:700}small{font-size:70%;color:#999}li{line-height:1.8}ol{list-style-type:decimal-leading-zero}ul.articles{list-style-type:none;font-size:120%}ul.articles li a,ul.articles li a:hover,ul.articles li a:visited{text-decoration:none;display:block;padding:.5vh .5vw}ul.articles li a:hover{background:#f4f4f4}h1,h2,h3,h4,h5,h6{font-weight:500}h1{width:100%;font-size:2.5rem;margin-bottom:3vh}h2{font-size:2rem;letter-spacing:1px;margin:2rem 0}h3{font-size:1.75rem;margin:2rem 0 1rem}h4,h5,h6{font-size:1.5rem}h3 a,h3 a:hover,h3 a:visited{text-decoration:none}#content{width:80%;max-width:960px;background:#fff;padding:3vw 5vw;margin:172px auto 5vw}header#main{position:fixed;top:0;width:100%;background:#fff;padding:20px 0 40px;margin:0;letter-spacing:3px;text-transform:uppercase;font-size:80%}header#main a,header#main a:hover,header#main a:visited{color:#fff;text-decoration:none;border:none;display:inline-block;margin:0 6vw}header#main a:nth-child(odd){background:#212121;padding:1vw 1.5vw;vertical-align:bottom;letter-spacing:0;margin:0}#content img{margin:0 auto}#content img[src$='#left']{float:left;display:inline;margin-right:10px}#content img[src$='#right']{float:right;display:inline;margin-left:10px}footer#article{margin-top:3vh}footer#article a,footer#article a:hover,footer#article a:visited{text-transform:uppercase;color:#999;text-decoration:none}.clear:after,.clear:before,[class*=content]:after,[class*=content]:before,[class*=site]:after,[class*=site]:before{content:'';display:table}.clear:after,[class*=content]:after,[class*=site]:after{clear:both}@media (min-width:1px) and (max-width:540px){header#main{font-size:120%;padding-bottom:0}header#main nav{display:flex;flex-direction:column}header#main a:nth-child(2){order:1;margin-bottom:20px}header#main a:nth-child(1){order:2;margin-bottom:10px;padding:15px 0!important}header#main a:nth-child(3){order:3;padding:15px 0!important}#content{margin-top:270px}footer#article{margin-top:1vh}footer#article a{display:block;padding:.75vh 0}}
+		</style>
+	</head>
+	
+	<body>
+		<header id="main">
+			<nav>
+				<a href="/">Home</a>
+			</nav>
+		</header>
+	
+		<div id="content">
+			{% block content %}{% endblock %}
+		</div> <!-- content -->
+		
+		<footer>
+			<p>&copy; Your Name</p>
+		</footer>
+	</body>
+</html> 
